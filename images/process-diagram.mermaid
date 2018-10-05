@@ -1,0 +1,11 @@
+```mermaid
+graph TD
+B[Answerers]
+style B fill:#2FE48B
+style A fill:#2FE48B
+A[Questioner] --> |Posts a question for X tokens| C(Submissions)
+B[Answerers] --> |Submit answers for Y tokens each| C
+A -->|Evaluate submissions| D(Evaluation)
+C --> |Submission period ends| D
+D --> |Reward is shared equally among approved submissions|B
+```

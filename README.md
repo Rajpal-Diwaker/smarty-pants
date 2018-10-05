@@ -1,5 +1,3 @@
-
-
 # Smarty Pants: Visage toy smart contract
 
 Crowdsourced question answering with a DApp. The project was built using [the Truffle framework](https://truffleframework.com/).
@@ -8,17 +6,7 @@ Crowdsourced question answering with a DApp. The project was built using [the Tr
 
 With Smarty Pants questioners can post questions for a fixed amount of tokens. Posted questions are published on a web interface. Anyone can submit an answer paying a submission fee. After a certain period of time submissions are closed and the questioner approves answers he deems relevant. If the questioner doesn't approve any question
 
-```mermaid
-graph TD
-B[Answerers]
-style B fill:#2FE48B
-style A fill:#2FE48B
-A[Questioner] --> |Posts a question for X tokens| C(Submissions)
-B[Answerers] --> |Submit answers for Y tokens each| C
-A -->|Evaluate submissions| D(Evaluation)
-C --> |Submission period ends| D
-D --> |Reward is shared equally among approved submissions|B
-```
+![process-diagram](./images/process-diagram.svg)
 
 ## Development
 
@@ -46,7 +34,7 @@ To try the web interface and be able to interact with the smart contract:
 3. Copy the Mnemonic from Ganach
 4. Change the network to "Custom RPC" then enter `http://127.0.0.1:7545` in the box titled "New RPC URL" and click **Save**.
 
-At this point MetaMask should point to the local blockchain and the right user.
+At this point MetaMask should point to the local blockchain and the right user. 
 
 ## TODO
 
